@@ -7,7 +7,10 @@ from time import sleep
 print("Hello ", end="")
 print("World")
 
-# flush argument testings
+# adding new-line creation within string
+print("Line 1\nLine 2")
+
+# flush parameter testing
 # stackoverflow answer from Kurt Bourbaki, https://stackoverflow.com/a/74678272
 for i in range(5):
     print(i, end=" ", flush=True)  # Print numbers as soon as they are generated
@@ -15,6 +18,14 @@ for i in range(5):
     sleep(0.5)
 
 print("end")
+
+# printing with embedded quotations
+print("Hello, \"bud\"")
+print('Hello, "bud"')
+
+# using format string
+name = "Me"
+print(f"Hello, {name}")
 
 # empty line
 print()
